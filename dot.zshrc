@@ -122,12 +122,12 @@ stty -ixon
 ###### PATH
 # If you come from bash you might have to change your $PATH.
 export PATH=.:$HOME/bin:/usr/local/bin:$PATH
-
 export LD_LIBRARY_PATH=/usr/local/lib64:/usr/local/lib:/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
 # Cuda
 export PATH=/usr/local/cuda/bin:$PATH
 export CUDA_LIB=/usr/local/cuda/lib64
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
 # MY STUFF
 export PATH=$PATH:~/bin
 
