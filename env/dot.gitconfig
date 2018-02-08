@@ -1,0 +1,8 @@
+[user]
+	name = Luca Rigazio
+	email = luca@totemiclabs.com
+[credential]
+	helper = store
+	helper = cache
+[push]
+	default = matching

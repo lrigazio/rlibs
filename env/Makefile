@@ -12,10 +12,12 @@ install:
 get-conf:
 	cp ~/.zshrc dot.zshrc
 	cp ~/.oh-my-zsh/themes/robbyrussell.zsh-theme .
+	cp ~/.gitconfig dot.gitconfig
 
 set-conf:
 	cp dot.zshrc ~/.zshrc
 	cp robbyrussell.zsh-theme ~/.oh-my-zsh/themes/
+	cp dot.gitconfig ~/.gitconfig
 
 sync:
 	git commit -a -m sync
