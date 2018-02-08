@@ -1,3 +1,9 @@
+all:
+	$(MAKE) install set-conf
+
+install:
+	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 get-conf:
 	cp ~/.zshrc dot.zshrc
 	cp ~/.oh-my-zsh/themes/robbyrussell.zsh-theme .
