@@ -21,5 +21,5 @@ set-conf:
 
 sync:
 	git commit -a -m sync
-	git push
 	git pull
+	git push
