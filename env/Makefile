@@ -4,7 +4,9 @@ all:
 	$(MAKE) install set-conf
 
 install:
-	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh > install.sh
+	chmod +x ./install.sh
+	./install.sh
 	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
 
 get-conf:
