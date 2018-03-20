@@ -4,6 +4,7 @@ all:
 	$(MAKE) install set-conf
 
 install:
+	sudo apt-get install zsh
 	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh > install.sh
 	chmod +x ./install.sh
 	./install.sh
