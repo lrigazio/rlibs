@@ -130,6 +130,9 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
 # MY STUFF
 export PATH=$PATH:~/bin
+# AWS
+export AWS_ACCESS_KEY_ID=AKIAJG2OIRK6AW4TLVCA
+export AWS_SECRET_ACCESS_KEY=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
 
 ###### ALIASES
 alias m=more
