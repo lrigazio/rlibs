@@ -9,6 +9,7 @@ install:
 	chmod +x ./install.sh
 	./install.sh
 	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
+	git clone https://github.com/arzzen/calc.plugin.zsh.git $HOME/.oh-my-zsh/plugins/calc
 
 get-conf:
 	cp ~/.zshrc dot.zshrc
