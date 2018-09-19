@@ -64,6 +64,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
