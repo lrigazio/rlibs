@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/luca/.oh-my-zsh
+export ZSH=/home/$USER/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -128,11 +128,17 @@ export PATH=.:$HOME/bin:/usr/local/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/lib64:/usr/local/lib:/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
 # Cuda
 export PATH=/usr/local/cuda/bin:$PATH
-export CUDA_LIB=/usr/local/cuda/lib64
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH
 # MY STUFF
 export PATH=$PATH:~/bin
+# Miniconda3
+# export PATH=$PATH:/home/$USER/miniconda3/bin/
+. /home/$USER/miniconda3/etc/profile.d/conda.sh
+# Caffe
+export PATH=$PATH:/home/$USER/build/caffe/build.cmake/install/bin
+export PYTHONPATH=$PYTHONPATH:/home/$USER/build/caffe/build.cmake/install/python
+# CUDA
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-9.2/extras/CUPTI/lib64
 
 ###### ALIASES
 alias m=more
@@ -193,3 +199,5 @@ gitsync_f(){
 alias gitsync=gitsync_f
 
 alias gitcommit='git commit -a -m'
+
+alias ciao='pwd >> ~/open-terminals.txt ; exit;'
