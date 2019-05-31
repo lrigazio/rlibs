@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/$USER/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -132,13 +132,13 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 # MY STUFF
 export PATH=$PATH:~/bin
 # Miniconda3
-# export PATH=$PATH:/home/$USER/miniconda3/bin/
-. /home/$USER/miniconda3/etc/profile.d/conda.sh
+# export PATH=$PATH:$HOME/miniconda3/bin/
+. $HOME/miniconda3/etc/profile.d/conda.sh
 # Caffe
-export PATH=$PATH:/home/$USER/build/caffe/build.cmake/install/bin
-export PYTHONPATH=$PYTHONPATH:/home/$USER/build/caffe/build.cmake/install/python
-# CUDA
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-9.2/extras/CUPTI/lib64
+# export PATH=$PATH:$HOME/build/caffe/build.cmake/install/bin
+# export PYTHONPATH=$PYTHONPATH:$HOME/build/caffe/build.cmake/install/python
+# Totemic
+export PYTHONPATH=$PYTHONPATH:$HOME/devel/gCools:$HOME/devel/sensorHub:$HOME/devel/algo/utilities/helper_functions:$HOME/devel/algo/tracking/python_script_multiple_track
 
 ###### ALIASES
 alias m=more
