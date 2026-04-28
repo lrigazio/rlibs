@@ -131,9 +131,6 @@ export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 # MY STUFF
 export PATH=$PATH:~/bin
-# Miniconda3
-# export PATH=$PATH:$HOME/miniconda3/bin/
-. $HOME/miniconda3/etc/profile.d/conda.sh
 # Caffe
 # export PATH=$PATH:$HOME/build/caffe/build.cmake/install/bin
 # export PYTHONPATH=$PYTHONPATH:$HOME/build/caffe/build.cmake/install/python
@@ -145,7 +142,7 @@ alias m=more
 alias so=source
 alias cls='clear'
 alias rd='\rm -rf'
-alias fi='find . -name'
+#alias fi='find . -name'
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
@@ -197,7 +194,14 @@ gitsync_f(){
   git push
 }
 alias gitsync=gitsync_f
-
 alias gitcommit='git commit -a -m'
-
 alias ciao='pwd >> ~/open-terminals.txt ; exit;'
+
+# >>> mamba initialize >>>
+export MAMBA_EXE="/home/luca/miniforge3/bin/mamba"
+export MAMBA_ROOT_PREFIX="/home/luca/miniforge3"
+
+if [ -x "$MAMBA_EXE" ]; then
+  eval "$($MAMBA_EXE shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX")"
+fi
+# <<< mamba initialize <<<
